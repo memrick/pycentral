@@ -54,7 +54,7 @@ from pprint import pprint
 from pycentral.workflows.workflows_utils import get_conn_from_file
 
 # Create an instance of ArubaCentralBase using API Credentials and connection information gathered from YAML file
-central = get_conn_from_file(filename="input_vars.yml", account="central_emrickm")
+central = get_conn_from_file(filename="input_vars.yaml", account="central_emrickm")
 
 # Sample API call using 'ArubaCentralBase.command()'
 # GET groups from Aruba Central
