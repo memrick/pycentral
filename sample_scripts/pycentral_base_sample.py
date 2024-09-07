@@ -53,19 +53,8 @@ from pycentral.base import ArubaCentralBase
 from pprint import pprint
 from pycentral.workflows.workflows_utils import get_conn_from_file
 
-# Create an instance of ArubaCentralBase using API access token
-# or API Gateway credentials.
+# Create an instance of ArubaCentralBase using API Credentials and connection information gathered from YAML file
 central = get_conn_from_file(filename="input_vars.ymls", account="central_emrickm")
-
-central_info = {
-    "base_url": "<api-gateway-domain-url>",
-    "token": {
-        "access_token": "<api-gateway-access-token>"
-    }
-}
-ssl_verify = True
-central = ArubaCentralBase(central_info=central_info,
-                           ssl_verify=ssl_verify)
 
 # Sample API call using 'ArubaCentralBase.command()'
 # GET groups from Aruba Central

@@ -9,5 +9,3 @@ token_store:
   type: "local"
   path: "temp"
 ssl_verify: true
-
-
