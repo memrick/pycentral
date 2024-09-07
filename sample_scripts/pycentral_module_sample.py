@@ -51,10 +51,19 @@ an API call is made to obtain list of existing groups.
 # Import Aruba Central Base
 from pycentral.base import ArubaCentralBase
 from pprint import pprint
-from pycentral.workflows.workflows_utils import get_conn_from_file
 
-# Create an instance of ArubaCentralBase using API Credentials and connection information gathered from YAML file
-central = get_conn_from_file(filename="input_vars.yaml", account="central_emrickm")
+# Create an instance of ArubaCentralBase using API access token
+# or API Gateway credentials.
+central_info = {
+    "base_url": "<api-gateway-domain-url>",
+    "token": {
+        "access_token": "<api-gateway-access-token>"
+    }
+}
+ssl_verify = True
+central = ArubaCentralBase(central_info=central_info,
+                           token_store=None,
+                           ssl_verify=ssl_verify)
 
 # Sample API call using Configuration module `pycentral.configuration`
 from pycentral.configuration import Groups
