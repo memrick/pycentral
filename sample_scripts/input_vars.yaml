@@ -7,5 +7,5 @@ central_emrickm:
   base_url: "https://apigw-uswest4.central.arubanetworks.com"
 token_store:
   type: "local"
-  path: "temp-testing"
+  path: "temp"
 ssl_verify: true
