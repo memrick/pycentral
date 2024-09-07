@@ -1,0 +1,11 @@
+central_emrickm:
+  username: "matt.emrick@gmail.com"
+  password: "@g00dHorse!"
+  client_id: "tsq84Lg27lKRF5Gk10AU66Koa0pLoZjQ"
+  client_secret: "FC55GXScu9wlTIuoafufcBsOT2EkxyCg"
+  customer_id: "4b43b1e30e544c8eb9f6276302293912"
+  base_url: "https://apigw-uswest4.central.arubanetworks.com"
+token_store:
+  type: "local"
+  path: "temp"
+ssl_verify: true
